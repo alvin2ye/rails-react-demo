@@ -1,5 +1,9 @@
 /** @jsx React.DOM */
 'use strict'
 var React = require('react')
+var ReactDOM = require('react-dom')
 var Hello = require('./Hello')
-React.renderComponent(<Hello />, document.getElementById('content'))
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  ReactDOM.render(<Hello />, document.getElementById('react'));
+});
